@@ -11,9 +11,10 @@
 
 ## PassportLib
 Explore the world of passports for Jetpack Compose
+Its primary purpose is to display the passport of a selected country when users choose the name of a country.
 
 <p align="start">
- <img src="assets/passportlib.png" width="500" height="450"/>
+ <img src="assets/passportlib.png" width="300" height="450"/>
 </p>
 
 ## Usage
