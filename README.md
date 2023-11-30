@@ -24,9 +24,6 @@ Its primary purpose is to display the passport of a selected country when users 
 
 ## Usage
 ```kotlin
-  val phoneNumber = remember { mutableStateOf("") }
-  val showError = remember { mutableStateOf(false) }
-
     PassportLib(
         modifier = Modifier
             .background(Color.White)
