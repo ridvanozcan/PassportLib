@@ -9,17 +9,11 @@
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg">
 </p>
 
-## CountryCP
-Customize your country text field for Jetpack Compose
+## PassportLib
+Explore the world of passports for Jetpack Compose
 
 <p align="start">
- <img src="assets/countrycp.png" width="500" height="450"/>
-</p>
-
-<div align="start"> <h3 align="start">GIF</h1> </div>
-
-<p align="start">
- <img src="assets/countrycp.GIF" width="40%"/>
+ <img src="assets/passportlib.png" width="500" height="450"/>
 </p>
 
 ## Usage
@@ -27,53 +21,14 @@ Customize your country text field for Jetpack Compose
   val phoneNumber = remember { mutableStateOf("") }
   val showError = remember { mutableStateOf(false) }
 
-  CountryCP(
-     modifier = Modifier
-      .background(Color.White)
-      .fillMaxWidth()
-      .padding(horizontal = 16.dp, vertical = 8.dp),
-     text = phoneNumber.value,
-     shape = RoundedCornerShape(8.dp),
-     showError = showError.value,
-     errorText = "Enter correct phone number",
-     onValueChange = { phoneNumber.value = it },
-     phonePlaceholder = {
-        Text(text = "xxx xxx xx xx")
-      },
-     errorTextPaddings = PaddingValues(vertical = 2.dp, horizontal = 16.dp),
-     onFullNumberValue = { fullPhoneNumber.value = it },
-     phoneFieldColors = OutlinedTextFieldDefaults.colors(
-       focusedBorderColor = Color.Red,
-       unfocusedBorderColor = Color.Transparent,
-       focusedContainerColor = Color.White,
-       unfocusedContainerColor = Color.LightGray,
-       errorContainerColor = if (showError.value) Color(0xFFFFE5E5) else Color.Transparent
-     )
-  )
+    PassportLib(
+        modifier = Modifier
+            .background(Color.White)
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        onClicked = { selectedCountry.value = it },
+    )
 
-```
-
-## Customize
-```python
-  modifier -> Arrange your view
-  searchModifier -> Arrange your search view
-  text -> Set text
-  onValueChange -> Use when text changes
-  onFullNumberValue -> Get fullnumber value
-  shape -> Arrange country field radius
-  showCountryCode -> If you want the country code to appear
-  showError -> If you want the error to appear
-  errorText -> Set error text
-  showClearIcon -> If you want clear icon to appear
-  focusField -> If you want focus the field
-  initialCountryCode -> Arrange initial country
-  errorTextPaddings -> Set error label paddings
-  phonePlaceholder -> When custom phone placeholder
-  searchPlaceholder -> When custom search placeholder
-  onClicked -> Get clicked
-  phoneFieldColors -> Set your phone field colors
-  searchFieldColors -> Set your search field colors
-  customRightIcon -> Customize your right icon
 ```
 
 ## Download
@@ -88,7 +43,7 @@ Customize your country text field for Jetpack Compose
   ## build.gradle
   ```gradle
   implementation 'androidx.compose.material3:material3:1.1.0'
-  implementation 'com.github.tfaki:CountryCP:<latest-version>'
+  implementation 'com.github.ridvanozcan:PassportLib:<latest-version>'
   ```
 </details>
 
@@ -102,7 +57,7 @@ Customize your country text field for Jetpack Compose
   ## build.gradle
   ```gradle
   implementation("androidx.compose.material3:material3:1.1.0")
-  implementation("com.github.tfaki:CountryCP:<latest-version>")
+  implementation("com.github.ridvan:PassportLib:<latest-version>")
   ```
 </details>
 

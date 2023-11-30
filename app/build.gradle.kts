@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.loftymr.countrycodepicker"
+    namespace = "com.ridvan.passportlib"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.loftymr.countrycodepicker"
+        applicationId = "com.ridvan.passportlib"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -47,7 +47,7 @@ android {
 
 dependencies {
 
-    implementation(project(":countrycp"))
+    implementation(project(":passportlib"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

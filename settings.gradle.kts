@@ -23,6 +23,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CountryCodePicker"
+rootProject.name = "PassportLib"
 include(":app")
-include(":countrycp")
+include(":passportlib")
