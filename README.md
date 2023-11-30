@@ -18,6 +18,10 @@ Its primary purpose is to display the passport of a selected country when users 
  <img src="assets/passportlib.png" width="300" height="450"/>
 </p>
 
+## Last Lib Version
+
+1.0.0
+
 ## Usage
 ```kotlin
   val phoneNumber = remember { mutableStateOf("") }
